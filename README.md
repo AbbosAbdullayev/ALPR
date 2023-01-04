@@ -1,5 +1,5 @@
-# License plate detection and recognition
+# License plate detection and recognition #
 Automatic license plate recognition (ALPR) pipeline.Korean License Plate Recognition.
--Wpodnet
--OCR
--OpenCV
+- Wpodnet  
+* OCR
++ OpenCV
