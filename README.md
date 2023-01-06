@@ -4,4 +4,4 @@ Automatic license plate recognition (ALPR) pipeline.Korean License Plate Recogni
 * OCR
 + OpenCV
 
-![](111.png)
+![](algorithm.png)
