@@ -6,8 +6,16 @@
 ![](algorithm.png)
 
 ## Dependencies ##
-
+```
+$ conda create -n alpr python=3.7  # create environment
+$ git clone https://github.com/AbbosAbdullayev/ALPR  # clone
+$ cd ALPR 
+$ pip install -r requirements.txt  # installing dependencies
+```
 ## Usage ##
+```
+$ python lpocr.py --video ('input video file name') --output ('output file name and expected format e.x:output.mp4')
+```
 ## Testing ##
 ## Video Inference ##
 ## Reference ##
