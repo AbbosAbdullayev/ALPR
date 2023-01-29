@@ -60,9 +60,7 @@ def ConvertToTensor(s_size, src):
 
         # OCR Recognition
 def Recognition(img):
-            #img=self.img
-            # static w,h
-           # print(type(img))
+            
             imgH=32
             imgW=100
             s_size = [imgH,imgW]
@@ -202,7 +200,7 @@ with torch.no_grad():
        img,cor=Detect_plate(img1)             
        if img:      
             img = img.resize((435,100)) 
-                #print('here I am')        
+                    
             t1= time()
             result = Recognition(img)
             print('OCR Recognition Time : ', time() - t1)
@@ -216,9 +214,7 @@ with torch.no_grad():
             dst= cv2.cvtColor(dst,cv2.COLOR_RGB2BGR)
             if cor:
                 pts=GetCoordinate(cor)
-                   # print('cor=',pts)
-                   # print('coordinates=',cor[0])
-                    #pts=([255,233],[440,334])
+                 
                 cv2.polylines(dst,[pts],True,color=(255,0,0),thickness=2) 
                 # dst=dst[:,:,::-1]
                 del pts
